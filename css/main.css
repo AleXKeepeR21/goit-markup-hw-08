@@ -1323,6 +1323,10 @@ img {
 }
 
 .mobile-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
   color: var(--black-txt-color-main);
 }
 .mobile-menu__nav-link--current {
@@ -1354,6 +1358,10 @@ img {
   color: var(--accent-txt-color);
 }
 
+.mobile-menu__contacts-link {
+  color: var(--grey-txt-color);
+}
+
 .mobile-menu__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,6 +1376,9 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+.mobile-menu__socials-link {
   color: var(--accent-txt-color);
 }
 
