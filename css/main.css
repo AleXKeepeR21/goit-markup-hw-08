@@ -1263,6 +1263,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
@@ -1270,8 +1271,24 @@ img {
   }
 }
 
+.mobile-menu-burger {
+  -webkit-transition: var(--anim);
+  transition: var(--anim);
+}
+.mobile-menu-btn.is-open .mobile-menu-burger {
+  opacity: 0;
+}
+
 .mobile-menu-close {
   opacity: 0;
+  -webkit-transition: var(--anim);
+  transition: var(--anim);
+}
+.mobile-menu-btn.is-open .mobile-menu-close {
+  opacity: 1;
+}
+.mobile-menu-close:hover + .mobile-menu-close {
+  fill: var(--accent-txt-color);
 }
 
 /* Мобільне меню */
@@ -1279,6 +1296,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,6 +1311,22 @@ img {
   background-color: var(--white-bg-color-card);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+  -webkit-transition: -webkit-transform var(--anim);
+  transition: -webkit-transform var(--anim);
+  transition: transform var(--anim);
+  transition: transform var(--anim), -webkit-transform var(--anim);
+}
+.mobile-menu.is-open {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.mobile-menu__nav-link {
+  color: var(--black-txt-color-main);
+}
+.mobile-menu__nav-link--current {
+  color: var(--accent-txt-color);
 }
 
 .mobile-menu__nav {
@@ -1313,6 +1348,10 @@ img {
 
 .mobile-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
+}
+.mobile-menu__contacts-item .accent {
+  font-size: 34px;
+  color: var(--accent-txt-color);
 }
 
 .mobile-menu__socials {
