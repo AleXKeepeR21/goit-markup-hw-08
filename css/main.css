@@ -1357,6 +1357,9 @@ img {
     display: none;
   }
 }
+.mobile-menu-btn:hover, .mobile-menu-btn:focus + svg {
+  fill: var(--accent-txt-color);
+}
 
 .mobile-menu-burger {
   -webkit-transition: var(--anim);
