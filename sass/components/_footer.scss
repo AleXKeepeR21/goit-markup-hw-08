@@ -10,6 +10,9 @@
 	.footer-container {
 		display: flex;
 		align-items: baseline;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		text-align: center;
 	}
 }
 
@@ -136,11 +139,22 @@
 	fill: currentColor;
 }
 
-@media screen and (min-width: 1200px) {
-	.footer-subscribe {
+.footer-subscribe {
+	@media screen and (min-width: 1200px) {
 		margin-left: 93px;
 	}
+
+	@media screen and (max-width: 1199px) {
+		flex-basis: 50%;
+		margin-top: 60px;
+	}
 }
+
+// @media screen and (min-width: 1200px) {
+// 	.footer-subscribe {
+// 		margin-left: 93px;
+// 	}
+// }
 
 .footer-subscribe-title {
 	font-size: 14px;

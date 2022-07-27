@@ -13,7 +13,7 @@
 		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
 		<link rel="stylesheet" href="./css/main.min.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
+		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 	</head>
 
 	<body>
@@ -51,6 +51,12 @@
 							</a>
 						</li>
 					</ul>
+					<button class="mobile-menu-btn" type="button" data-menu-button>
+						<svg class="mobile-menu-icon" width="24" height="16">
+							<use class="mobile-menu-burger" href="./images/icons/icons.svg#icon-menu"></use>
+							<use class="mobile-menu-close" href="./images/icons/icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -374,5 +380,77 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Мобільне меню -->
+		<div class="mobile-menu" data-menu>
+			<ul class="mobile-menu__nav list">
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link mobile-menu__nav-link--current link" href="./index.html">Студия</a>
+				</li>
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link link" href="./portfolio.html">Портфолио</a>
+				</li>
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link link" href="">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-menu__contacts list">
+				<li class="mobile-menu__contacts-item">
+					<a class="mobile-menu__contacts-link link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+				</li>
+				<li class="mobile-menu__contacts-item">
+					<a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-menu__socials list">
+				<li class="mobile-menu__socials-item">
+					<a
+						class="mobile-menu__socials-link link"
+						href="https://www.instagram.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="instagram"
+					>
+						Instagram
+					</a>
+				</li>
+				<li class="mobile-menu__socials-item">
+					<a
+						class="mobile-menu__socials-link link"
+						href="https://twitter.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="twitter"
+					>
+						Twitter
+					</a>
+				</li>
+				<li class="mobile-menu__socials-item">
+					<a
+						class="mobile-menu__socials-link link"
+						href="https://www.facebook.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="facebook"
+					>
+						Facebook
+					</a>
+				</li>
+				<li class="mobile-menu__socials-item">
+					<a
+						class="mobile-menu__socials-link link"
+						href="https://www.linkedin.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="linkedin"
+					>
+						LinkedIn
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
