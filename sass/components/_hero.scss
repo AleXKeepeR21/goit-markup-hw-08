@@ -6,11 +6,37 @@
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
 	background-color: var(--dark-bg-color);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero_sm.jpg);
+
+	// Для ретіна экранів мобільна версія
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero/img-hero_sm@2x.jpg);
+	}
+
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero_md.jpg);
+
+		// Для ретіна экранів планшетна версія
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/img-hero_md@2x.jpg);
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero_lg.jpg);
+		
+		// Для ретіна экранів десктоп версія
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/hero/img-hero_lg@2x.jpg);
+		}
+	}
 }
 
 .hero__title {
