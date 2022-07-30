@@ -20,11 +20,6 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
-	.address-container {
-		text-align: center;
-	}
-}
 
 .logo-footer {
 	font-family: "Raleway";
@@ -40,20 +35,33 @@
 	}
 }
 
-// .adress-container {
-// 	margin-top: 10px;
-// }
+@media screen and (max-width: 767px) {
+	.address-container {
+		text-align: center;
+		margin-bottom: 60px;
+	}
 
-.footer-list {
-	margin-top: 20px;
+	.address {
+		margin-top: 20px;
+	}
 
-	@media screen and (max-width: 767px) {
+	.footer-list {
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
-		margin-bottom: 60px;
 	}
 }
+
+// .footer-list {
+// 	// margin-top: 20px;
+
+// 	@media screen and (max-width: 767px) {
+// 		display: flex;
+// 		flex-direction: column;
+// 		gap: 8px;
+// 		// margin-bottom: 60px;
+// 	}
+// }
 
 .footer-link {
 	font-weight: 400;
@@ -107,7 +115,7 @@
 
 .social-media-footer-list {
 	display: flex;
-	// gap: 10px;
+	
 
 	@media screen and (max-width: 767px) {
 		justify-content: center;
